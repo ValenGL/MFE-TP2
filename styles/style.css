@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+*::selection {
+  background: #046c43;
+}
+
 html {
   font-size: 62, 5%;
   font-family: "Roboto", sans-serif;
@@ -13,9 +17,6 @@ html {
 
 a {
   margin: 1rem;
-  font-family: "Roboto", sans-serif;
-  color: #fff;
-  text-decoration: none;
 }
 
 body {
@@ -81,7 +82,7 @@ header {
 }
 
 .header-title {
-  z-index: 1;
+  font-weight: 100;
 }
 /* END HEADER */
 
@@ -95,8 +96,21 @@ main {
 }
 
 .name {
+  margin-bottom: 0.5rem;
+  font-weight: 100;
   padding: 1rem;
-  margin: 3rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 1z);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 25px;
+}
+
+.info {
+  font-weight: 100;
+  margin-bottom: 2.5rem;
+  padding: 1rem;
   text-align: center;
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 1z);
@@ -111,8 +125,9 @@ main {
 }
 
 .btn {
+  margin: 1.5rem;
+  text-decoration: underline;
   font-size: 150%;
-  margin: 1rem;
   text-align: center;
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 1z);
@@ -123,6 +138,7 @@ main {
 
 .name {
   font-size: 500%;
+  font-weight: 1000;
 }
 
 /* Animation menu */

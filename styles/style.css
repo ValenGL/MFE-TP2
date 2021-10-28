@@ -20,10 +20,6 @@ a {
   text-decoration: underline;
 }
 
-p {
-  font-weight: 100;
-}
-
 body {
   position: relative;
   min-height: 100vh;
@@ -32,6 +28,17 @@ body {
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
+}
+
+.glass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  border-radius: 5px;
 }
 
 /* -------------------------------- LANDING ------------------------------------------- */
@@ -104,34 +111,12 @@ main {
 }
 
 .name {
-  margin-bottom: 0.5rem;
-  font-weight: 100;
   padding: 1rem;
-  text-align: center;
-  background: rgba(40, 40, 40, 0.5);
-  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 1z);
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
-  font-size: 500%;
-  font-weight: 1000;
-  border-radius: 25px;
-}
-
-.info {
-  font-weight: 100;
-  padding: 1rem;
-  text-align: center;
-  background: rgba(40, 40, 40, 0.5);
-  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 1z);
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
-  border-radius: 25px;
-}
-
-.mail {
-  margin-top: 0.5rem;
-  margin-bottom: 2.5rem;
-  font-size: 150%;
+  margin: 1rem;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  border-radius: 10px;
 }
 
 .menu {
@@ -139,22 +124,7 @@ main {
   justify-content: center;
 }
 
-.btn {
-  margin: 0.5rem;
-  text-align: center;
-  background: rgba(70, 70, 70, 0.5);
-  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 1z);
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
-  border-radius: 25px;
-}
-
-.btn-pm {
-  margin: 0rem 2rem;
-}
-
 .ul {
-  padding: 0.5rem;
   text-decoration: underline;
 }
 
@@ -387,29 +357,44 @@ hr {
   }
 }
 
+.df {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tecno {
+  text-align: center;
+}
 .tecno-content {
+  text-align: center;
   display: flex;
   margin: 0rem 1rem;
 }
+
+.study {
+  text-align: center;
+}
+
 .study-content {
-  margin: 0rem 1rem;
-  padding: 1 rem;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  margin: 0rem 1rem;
+  padding: 1 rem;
+  text-align: center;
 }
 
 .study-content-card {
-  margin: 0rem 1rem;
+  margin: 0.5rem;
+  text-align: center;
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 10rem;
-
   min-width: 20rem;
+  min-height: 8rem;
   padding: 1rem;
-  border-radius: 25%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   transition: 0.3s;
 }
@@ -418,25 +403,29 @@ hr {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 }
 
+.job {
+  text-align: center;
+}
+
 .job-content {
-  margin: 0rem 1rem;
-  padding: 1 rem;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  margin: 0rem 1rem;
+  padding: 1 rem;
+  text-align: center;
 }
 
 .job-content-card {
-  margin: 0rem 1rem;
+  margin: 0.5rem;
+  text-align: center;
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 10rem;
-
   min-width: 20rem;
+  min-height: 8rem;
   padding: 1rem;
-  border-radius: 25%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   transition: 0.3s;
 }
@@ -446,24 +435,40 @@ hr {
 }
 
 ul {
-  list-style-type: disc;
+  list-style-type: none;
   columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
+}
+
+.ulb {
+  list-style-type: none;
+  columns: 1;
+  -webkit-columns: 1;
+  -moz-columns: 1;
 }
 
 /* -------------------------------- END CV ------------------------------------------- */
 
 /* -------------------------------- BLOG ------------------------------------------- */
 
+.entry {
+  text-align: center;
+}
+
 .entry-content {
   padding: 1 rem;
 }
 
 .entry-content-card {
-  min-width: 50vh;
-  padding: 3rem;
-  border-radius: 25%;
+  margin: 0.5rem;
+  text-align: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 10rem;
+  min-width: 20rem;
+  min-height: 8rem;
+  padding: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   transition: 0.3s;
 }

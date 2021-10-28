@@ -339,11 +339,10 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 25%;
 }
 
 .linkedin-img {
-  width: 50%;
+  width: 3rem;
 }
 
 /* FIN MAIN */
@@ -354,8 +353,7 @@ hr {
 #VGL {
   position: fixed;
   bottom: 0;
-  width: 15rem;
-  height: 15rem;
+  width: 15%;
 }
 
 .slide-in-left {

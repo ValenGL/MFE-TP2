@@ -35,10 +35,9 @@ body {
   justify-content: center;
   align-items: center;
   color: #333;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(0.5px);
   -webkit-backdrop-filter: blur(0.5px);
-  border-radius: 5px;
 }
 
 /* -------------------------------- LANDING ------------------------------------------- */
@@ -111,14 +110,24 @@ main {
 }
 
 .name {
+  color: #000;
+  text-align: center;
   padding: 1rem;
   margin: 1rem;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(0.5px);
   -webkit-backdrop-filter: blur(0.5px);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
+.info {
+  text-align: center;
+}
+
+.mail {
+  text-align: center;
+  font-weight: 100;
+}
 .menu {
   display: flex;
   justify-content: center;

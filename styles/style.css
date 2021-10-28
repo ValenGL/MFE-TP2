@@ -154,6 +154,7 @@ main {
 }
 
 .ul {
+  padding: 0.5rem;
   text-decoration: underline;
 }
 

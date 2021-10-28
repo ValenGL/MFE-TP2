@@ -140,14 +140,17 @@ main {
 }
 
 .btn {
-  margin: 1.5rem;
-  font-size: 150%;
+  margin: 0.5rem;
   text-align: center;
   background: rgba(70, 70, 70, 0.5);
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 1z);
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
   border-radius: 25px;
+}
+
+.btn-pm {
+  margin: 0rem 5rem;
 }
 
 .ul {

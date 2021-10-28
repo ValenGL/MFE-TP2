@@ -11,7 +11,7 @@
 html {
   font-size: 62, 5%;
   font-family: "Roboto", sans-serif;
-  color: #fff;
+  color: #ddd;
   background-color: #111;
 }
 
@@ -34,6 +34,7 @@ body {
   background-position-y: center;
 }
 
+/* -------------------------------- LANDING ------------------------------------------- */
 /* HEADER */
 
 header {
@@ -111,12 +112,13 @@ main {
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 1z);
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
+  font-size: 500%;
+  font-weight: 1000;
   border-radius: 25px;
 }
 
 .info {
   font-weight: 100;
-  margin-bottom: 2.5rem;
   padding: 1rem;
   text-align: center;
   background: rgba(40, 40, 40, 0.5);
@@ -124,6 +126,12 @@ main {
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
   border-radius: 25px;
+}
+
+.mail {
+  margin-top: 0.5rem;
+  margin-bottom: 2.5rem;
+  font-size: 150%;
 }
 
 .menu {
@@ -135,7 +143,7 @@ main {
   margin: 1.5rem;
   font-size: 150%;
   text-align: center;
-  background: rgba(40, 40, 40, 0.5);
+  background: rgba(70, 70, 70, 0.5);
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 1z);
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
@@ -144,11 +152,6 @@ main {
 
 .ul {
   text-decoration: underline;
-}
-
-.name {
-  font-size: 500%;
-  font-weight: 1000;
 }
 
 /*  Name animation */
@@ -216,6 +219,8 @@ ul {
 }
 
 a {
+  display: flex;
+  justify-content: center;
   color: inherit;
   text-decoration: none;
 }
@@ -323,10 +328,29 @@ hr {
   transition-delay: 0s;
 }
 
+.container-linkedin {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-linkedin-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+
+.linkedin-img {
+  width: 50%;
+}
+
 /* FIN MAIN */
 
-/* --------------------------- FIN LANDING ------------------------------ */
+/* --------------------------- END LANDING ------------------------------ */
 
+/* --------------------------- CV ------------------------------ */
 #VGL {
   position: fixed;
   bottom: 0;
@@ -365,19 +389,26 @@ hr {
   }
 }
 
+.tecno-content {
+  display: flex;
+  margin: 0rem 1rem;
+}
 .study-content {
+  margin: 0rem 1rem;
   padding: 1 rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
 }
 
 .study-content-card {
-  margin: 1rem;
+  margin: 0rem 1rem;
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 10rem;
+
   min-width: 20rem;
   padding: 1rem;
   border-radius: 25%;
@@ -388,3 +419,92 @@ hr {
 .study-content-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 }
+
+.job-content {
+  margin: 0rem 1rem;
+  padding: 1 rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.job-content-card {
+  margin: 0rem 1rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 10rem;
+
+  min-width: 20rem;
+  padding: 1rem;
+  border-radius: 25%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+.job-content-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+ul {
+  list-style-type: disc;
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+}
+
+/* -------------------------------- END CV ------------------------------------------- */
+
+/* -------------------------------- BLOG ------------------------------------------- */
+
+.entry-content {
+  padding: 1 rem;
+}
+
+.entry-content-card {
+  min-width: 50vh;
+  padding: 3rem;
+  border-radius: 25%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+.entry-content-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+.entry-content-img {
+  width: 15rem;
+  border-radius: 1rem;
+}
+
+.container-vertical-line {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.vertical-line {
+  width: 0.3rem;
+  background-color: #555;
+  height: 100%;
+  float: left;
+}
+
+.container-vertical-dotted-line {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.vertical-dotted-line {
+  width: 0.3rem;
+  background-color: #555;
+  height: 100%;
+  float: left;
+}
+
+/* -------------------------------- END BLOG ------------------------------------------- */

@@ -218,10 +218,6 @@ main {
   --transition-delay: 0.2s;
 }
 
-ul {
-  list-style: none;
-}
-
 a {
   display: flex;
   justify-content: center;
@@ -451,9 +447,9 @@ hr {
 
 ul {
   list-style-type: disc;
-  columns: 3;
-  -webkit-columns: 3;
-  -moz-columns: 3;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
 }
 
 /* -------------------------------- END CV ------------------------------------------- */

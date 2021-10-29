@@ -111,6 +111,7 @@ main {
 }
 
 .name {
+  font-weight: 100;
   color: #000;
   text-align: center;
   padding: 1rem;
@@ -461,6 +462,23 @@ ul {
 /* -------------------------------- END CV ------------------------------------------- */
 
 /* -------------------------------- BLOG ------------------------------------------- */
+
+.container-github {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-github-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.github-img {
+  width: 3rem;
+}
 
 .entry {
   text-align: center;
